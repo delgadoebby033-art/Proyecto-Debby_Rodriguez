@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Akt", sans-serif;;
+}
+
+body {
+    background-color: #EBE8DB
+}
+
+/* Texto */
+p {
+    color: #000000;
+    font-size: 160%;
+    line-height: 1.5;
+    padding: 3%;
+    text-indent: 2%;
+    text-align: justify;
+}
+
+/* Subtítulos */
+h2 {
+    font-size: 200%;
+    line-height: 155%;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    padding: 0;
+}
+
+/* Enlaces */
+a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #D76C82;
+    text-decoration: underline;
+}
+
+/* Imágenes */
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    margin-bottom: 4px;
+}
+
+#contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#banner-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0 3% 0;
+}
+
+/* Encabezado */
+
+header {
+    background-color: #3D0301;
+    padding: 20px 40px;
+}
+
+.akt-encabezado {
+    font-family: "Akt", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    color: rgb(255, 255, 255);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav li i {
+    color: white;
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #D76C82;
+}
+
+  /* SLIDER */
+
+.slider-wrap {
+    width: 100%;
+    margin: auto;
+}
+
+.slider1 img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+/* INFORMACIÓN */
+
+.tabla-cuadros {
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto;
+    border-collapse: separate; /* Permite separar los cuadros */
+    border-spacing: 15px; /* Espacio de separación entre cada cuadro */
+}
+
+.cuadro-celda {
+    background-color: #D76C82;
+    width: 50%;                /* Cada celda toma la mitad del ancho de la fila */
+    padding: 25px;
+    text-align: center;
+    vertical-align: top;       /* Alinea el texto arriba de la celda */
+    border-radius: 8px;
+    border-top: 5px solid #D76C82;
+    box-shadow: 0px 4px 6px #D76C82;
+}
+
+.cuadro-celda:hover {
+    transform: translateY(-5px);
+}
+
+.cuadro-celda p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+.cuadro-celda h2 { 
+    color: #000000; 
+    margin-bottom: 10px; 
+
+} .cuadro-celda p { 
+    color: #000000; 
+    line-height: 1.5; 
+    font-size: 14px; 
+}
+
+
+/* FOOTER */
+footer {
+    background-color: #3D0301;
+    text-align: center;
+
+    padding-top: 50px;
+    padding-bottom: 10px;
+
+    margin-top: 40px;
+}
+
+/* CONTENEDOR GENERAL */
+.icon-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*links del footer*/
+.icon-text-icon ul {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+
+    list-style: none;
+
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+.icon-text-icon ul li a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.icon-text-icon ul li a:hover {
+    color: #D76C82;
+}
+
+/*iconos del footer*/
+.icon-text-text ul {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 25px;
+
+    list-style: none;
+
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+.icon-text-text ul li a {
+    color: white;
+    font-size: 28px;
+
+    transition: 0.3s;
+}
+
+.icon-text-text ul li a:hover {
+    color: #D76C82;
+    transform: scale(1.2);
+}
+
+/*Texto Final*/
+footer p {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    width: 100%;
+    white-space: nowrap;
+}
+
+
+/*Responsive*/
+@media screen and (max-width: 768px) {
+
+footer {
+    padding-top: 40px;
+}
+
+.icon-text-text ul {
+    gap: 18px;
+}
+
+.icon-text-text ul li a {
+    font-size: 24px;
+}
+
+footer p {
+    font-size: 14px;
+}
+}

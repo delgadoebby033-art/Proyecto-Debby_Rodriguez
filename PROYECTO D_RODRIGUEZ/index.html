@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>proyecto D_Rodriguez</title>
+    <!-- hace llamado a la pagina de iconos-->
+    <script src="https://kit.fontawesome.com/2600c6ce36.js" crossorigin="anonymous"> </script>
+
+    <!-- hace llamado a la pagina de estilos-->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- hace llamado a la pagina de slider-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<!-- hace llamado a la pagina de fuentes-->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Akt:wght@100..900&family=Handlee&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+        <div id="contenedor">
+
+    <!-- Encabezado -->
+    <div id="banner-wrapper">
+    <header>
+        <div class="header-inner">
+
+            <nav>
+                <h1><i class="fa fa-star"></i> Mi Sitio Web </h1>
+            <ul>
+                <li>
+                    <a href="index.html" class="current">Inicio</a>
+                </li>
+                <li>
+                <a href="login.html">Inicio de Sesión</a>
+                </li>
+                <li>
+                    <li>
+                        <i class="fa fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Buscar">
+                    </li>
+                </li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+    </div>
+
+
+
+    <!-- SLIDER -->
+        <div class="slider-wrap">
+            <ul class="slider1">
+                <li><img src="img/slider/s.png" alt="Foto en Anigua Guatemala"></li>
+                <li><img src="img/slider/mm.png" alt="Foto con una amiga"></li>
+                <li><img src="img/slider/qq.png" alt="Dibujo"></li>
+                <li><img src="img/slider/an.png" alt="Dibujo"></li>
+            </ul>
+        </div>
+    
+        </div>
+
+    
+
+    <!-- Información -->
+
+   <table class="tabla-cuadros">
+        <tr>
+            <td class="cuadro-celda">
+            <h2>Misión</h2>
+            <p>
+            Esforzarme cada día en mis estudios, aprender nuevas habilidades tecnológicas 
+            y desarrollar disciplina, creatividad y responsabilidad para alcanzar mis metas 
+            personales y profesionales.
+            </p>
+            </td>
+
+            <td class="cuadro-celda">
+            <h2>Visión</h2>
+            <p>
+            Ser una persona profesional, responsable y exitosa en el área de informática,
+            capaz de desarrollar proyectos tecnológicos que ayuden a otras personas, 
+            mientras continúo creciendo personal y académicamente.
+            </p>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="cuadro-celda">
+            <h2>Valores</h2>
+            <p>
+            -Respeto <br>
+            -Integridad <br>
+            -Responsabilidad <br>
+            -Creatividad <br>
+            -Disciplina</p>
+            </td>
+
+            <td class="cuadro-celda">
+            <h2>Metas</h2>
+            <p>
+            -Terminar mis estudios con buenas calificaciones. <br>
+            -Aprender más sobre informática y tecnología. <br>
+            -Mejorar mis hábitos y métodos de estudio. <br>
+            -Ingresar y graduarme de una carrera profesional. <br>
+            -Conseguir estabilidad laboral y personal. <br>
+            -Desarrollarme como una persona responsable y exitosa.
+            </p>
+            </td>
+        </tr>
+    </table>
+    
+
+    <!-- FOOTER -->
+
+<footer>
+    <div class="banner-wrapper">
+
+        <div class="icon-text">
+
+            <div class="icon-text-icon">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="icon-text-text">
+                <ul>
+                    <li>
+                        <a href="https://mail.google.com/" target="_blank">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=61553781058472" target="_blank">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.instagram.com/fany_delll" target="_blank">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.youtube.com/@DebbyDelgado" target="_blank">
+                            <i class="fa fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <p>&copy; 2026 Mi Sitio Web | Proyecto Debby Rodriguez</p>
+
+        </div>
+    </div>
+</footer>
+
+    <!--Escrips -->
+    <script>
+
+    $(document).ready(function(){
+        $('.slider1').bxSlider({
+            mode: 'fade',
+            captions: true,
+            auto: true,
+            pause: 3000
+            });
+        $('.slider2').bxSlider({
+            mode: 'fade',
+            captions: true,
+            auto: true,
+            pause: 3000
+            });
+        $('.slider3').bxSlider({
+            mode: 'fade',
+            captions: true,
+            auto: true,
+            pause: 3000
+            });
+        $('.slider4').bxSlider({
+            mode: 'fade',
+            captions: true,
+            auto: true,
+            pause: 3000
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
